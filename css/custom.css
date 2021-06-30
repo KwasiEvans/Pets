@@ -1,0 +1,203 @@
+body {
+}
+
+#wrapper {
+	background: url(../img/photodune-6604606-technology-background-design-xl.jpg) rgba(248,248,248,1) bottom;
+	z-index: 2;
+	position:absolute;
+	width: 100%;
+	height:100vh;
+}
+
+
+#navicon {
+	margin-right: 5px;
+}
+
+#mytable {
+	background: #FBFBFB;
+	padding: 20px 20px 10px 20px;
+	border: solid #333 2px;
+	margin-bottom: 20px;
+	box-shadow: #999 7px 10px 5px;
+	border-radius: 5px;
+}
+
+#prtable {
+	background: #FFF;
+	padding:0px;
+	border: solid #000 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: #999 7px 10px 5px;
+}
+
+
+thead {
+	background: #06C; 
+	color: #F3F3F3;
+}
+
+thead#pr {
+	background: #FFF ; 
+	color: #000;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #F0F0FF;
+}
+
+table {
+	border: 0px;
+}
+
+td.mat a { 
+	display: block; 
+	cursor:pointer;
+	text-decoration: none;
+}
+
+marquee {
+	z-index: 10; 
+}
+
+
+<!------------------------------------------------------------------------>
+
+		/* simple */
+		.flip-container {
+			-webkit-perspective: 1000;
+			-moz-perspective: 1000;
+			perspective: 1000;
+
+			border: 1px solid #ccc;
+			background:rgba(0,255,0,1);
+		}
+
+			
+			.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+				filter: FlipH;
+    			-ms-filter: "FlipH";
+			}
+
+	/*	.flip-container, .front, .back {
+			width: 600px;
+			height: 600px;
+		} */
+
+		.flipper {
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+
+			-moz-transition: 0.6s;
+			-moz-transform-style: preserve-3d;
+
+			transition: 1s;
+			transform-style: preserve-3d;
+
+			position: relative;
+		}
+
+		.front, .back {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+			position: absolute;
+			top: 10em;
+			left: 0;
+			bottom: 10em;
+			right: 0;
+
+			padding: 20px;
+			height: 420px;
+		}
+
+		.front {
+			background: url(../img/bg6.jpg) bottom left rgba(51,51,51,0);
+			z-index: 2;
+		}
+
+		.back {
+			background: url(../img/bg6.jpg) bottom left rgba(51,51,51,0);
+
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+
+		.front .name {
+			font-size: 2em;
+			display: inline-block;
+			background: rgba(33, 33, 33, 0.9);
+			color: #f8f8f8;
+			font-family: Courier;
+			padding: 5px 10px;
+			border-radius: 5px;
+			bottom: 60px;
+			left: 25%;
+			position: absolute;
+			text-shadow: 0.1em 0.1em 0.05em #333;
+
+			-webkit-transform: rotate(-20deg);
+			-moz-transform: rotate(-20deg);
+			transform: rotate(-20deg);
+		}
+
+		.back-logo {
+			position: absolute;
+			top: 40px;
+			left: 90px;
+			width: 160px;
+			height: 117px;
+			background: url(logo.png) 0 0 no-repeat;
+		}
+
+		.back-title {
+			font-weight: bold;
+			color: #00304a;
+			position: absolute;
+			top: 180px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+			font-family: Courier;
+			font-size: 2em;
+		}
+
+		.back p {
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			padding: 0 20px;
+		}
+
+		/* vertical */
+		.vertical.flip-container {
+			position: relative;
+		}
+
+			.vertical .back {
+				-webkit-transform: rotateX(180deg);
+				-moz-transform: rotateX(180deg);
+				transform: rotateX(180deg);
+			}
+
+			.vertical.flip-container .flipper {
+				-webkit-transform-origin: 100% 213.5px;
+				-moz-transform-origin: 100% 213.5px;
+				transform-origin: 100% 213.5px;
+			}
+
+			.vertical.flip-container:hover .flipper {
+				-webkit-transform: rotateX(-180deg);
+				-moz-transform: rotateX(-180deg);
+				transform: rotateX(-180deg);
+			}
+	
